@@ -21,6 +21,7 @@ const completePrompt = async (prompt) => {
 // Example usage
 const prompt = 'Say My name is Marsiya';
 
+//print response or error
 completePrompt(prompt)
   .then((response) => {
     console.log('Response:', response);
