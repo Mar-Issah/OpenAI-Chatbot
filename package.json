@@ -1,0 +1,21 @@
+{
+  "name": "testopenai",
+  "version": "1.0.0",
+  "description": "testing the OpenAI API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "OpenAI",
+    "AI",
+    "Chat"
+  ],
+  "author": "Marsiya Issah",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  }
+}
