@@ -11,15 +11,15 @@ const completePrompt = async (prompt) => {
   const completion = await openai.createCompletion({
     model: 'text-davinci-003',
     prompt,
-    temperature: 0,
-    max_tokens: 7,
+    temperature: 0.8,
+    max_tokens: 3000,
   });
 
   return completion.data.choices[0].text.trim();
 };
 
 // Example usage
-const prompt = 'Say My name is Marsiya';
+const prompt = 'What are all the regions in Ghana?';
 
 //print response or error
 completePrompt(prompt)
