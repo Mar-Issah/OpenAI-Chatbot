@@ -5,6 +5,7 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
+openai.api_key = process.env.OPENAI_API_KEY;
 
 // Function to send a prompt to OpenAI and receive a completion
 const completePrompt = async (prompt) => {
@@ -19,7 +20,7 @@ const completePrompt = async (prompt) => {
 };
 
 // Example usage
-const prompt = 'What are all the regions in Ghana?';
+const prompt = 'What is the current news on bitcoin';
 
 //print response or error
 completePrompt(prompt)
